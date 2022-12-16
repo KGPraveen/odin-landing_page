@@ -5,15 +5,17 @@
 }
 
 body {
-    height: 100%;
+    width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
 }
 
 body div {
+    flex-grow: 0;
     flex-shrink: 1;
 }
+
 
 
 
@@ -23,9 +25,10 @@ body div {
 
 .header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: #1F2937;
+    justify-content: space-between;
+    padding: 10px 100px;
+    gap: 160px;
 }
 
 .header-logo-text {
@@ -55,18 +58,19 @@ body div {
 
 .awesome {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 80px;
     background-color: #1F2937;
-    padding: 100px 0px;
-    width: 100%;
-    flex-shrink: 1;
+    justify-content: space-between;
+    padding: 100px;
+    gap: 80px;
 }
 
 .aweimg {
-    width: 500px;
+    width: 35%;
+    height: auto;
+    min-width: 0;
+    max-width: 35%;
+    flex-shrink: 1;
+    align-self: center;
 }
 
 .aweleft {
@@ -74,6 +78,7 @@ body div {
     flex-direction: column;
     flex-basis: 750px;
     flex-shrink: 1;
+    flex-grow: 1;
     color: #F9FAF8;
 }
 
@@ -159,10 +164,11 @@ body div {
 
 
 .quote {
-    display: flex;
-    flex-direction: column;
     background-color: #E5E7EB;
-    padding: 120px 450px 80px;
+}
+
+.quote-contents {
+    margin: 100px;
 }
 
 .quote-text {
@@ -191,17 +197,22 @@ body div {
 
 
 .signup {
-    padding: 150px 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bluebackground {
     border-radius: 15px;
     background-color: #3882F6;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 100px;
-    padding: 50px 80px;
+    padding: 50px 50px;
+    width: 70%;
+    height: auto;
 }
 
 .blue-left {
@@ -213,14 +224,14 @@ body div {
     font-size: 32px;
     font-weight: 900;
     color: #F9FAF8;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .bl-sub {
     padding-top: 8px;
     font-size: 18px;
     color: #E5E7EB;
-    margin-top: 0;
+    margin: 0;
 }
 
 
