@@ -42,6 +42,7 @@ body div {
     font-size: 18px;
     gap: 35px;
     padding: 0;
+    padding-bottom: 5px;
 }
 
 
@@ -139,9 +140,9 @@ body div {
 
 .cardimg {
     border-radius: 10px;
-    border: solid #3882F6 3px;
+    border: solid #000000 3px;
     width: 200px;
-    height: 200px;
+    height: auto;
 }
 
 .card-text {
@@ -254,4 +255,15 @@ body div {
 
 li {
     list-style: none;
+}
+
+a {
+    border-bottom: 1px solid #E5E7EB;
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+spam {
+    font-size: large;
+    font-weight: bold;
 }
